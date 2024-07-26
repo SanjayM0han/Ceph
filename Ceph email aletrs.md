@@ -3,7 +3,7 @@ The alerts module can send simple alert messages about cluster health via e-mail
 
 There I am using gmail acoount for SMTP configuration 
 ## 1. Enable alert module
-Enable the alert module from mgr 
+Enable the alert service from mgr module
 
     sudo ceph mgr module enable alerts
 ## 2. Configuration
