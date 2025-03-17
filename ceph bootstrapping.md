@@ -64,3 +64,13 @@ done
 - To add the OSD specifically. Run the command:
 
       ceph orch daemon add osd cephtest:/dev/sdb
+
+### Remove OSD
+
+- It is needed to clean up the removed OSD by executing:
+ 
+		ceph orch daemon rm osd.<id>
+ 
+- If needed, also wipe the disk:
+ 
+		cephadm ceph-volume lvm zap --destroy --osd-id <id>
